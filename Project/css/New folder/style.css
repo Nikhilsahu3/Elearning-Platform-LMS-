@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+
+:root{
+    --main-color:#8e44ad;
+    --red:#e74c3c;
+    --orange:#f39c12;
+    --light-color:#888;
+    --light-bg:#eee;
+    --black:#2c3e50;
+    --white:#fff;
+    --border:.1rem solid rgba(0,0,0,.2);
+ }
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+ }
+ 
+ *::selection{
+    background-color: var(--main-color);
+    color:#fff;
+
+ }
+ *::-webkit-scrollbar-track{
+    background-color: transparent;
+
+ }
+
+ *::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    
+ }
+ 
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+ body{
+    background-color: var(--light-bg);
+ }
+ section{
+     padding: 2rem;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+ .header{
+     background-color: var(--white);
+     border-bottom: var(--border);
+     position: sticky;
+     top:0; left 0;right: 0;
+     z-index: 1000;
+ 
+ }
+ .header .flex .logo{
+     font-size: 2.5;
+     color: var(--black);
+     font-weight: bolder;
+ }
+ .header .flex .search-form{
+     width: 50rem;
+     border-radius: 50rem;
+     display: flex;
+     align-items: center;
+     gap: 1.5rem;
+     padding: 1rem 2rem;
+     background-color: var(--light-bg);0
+ }
+ 
+ .header .flex .search-form input{
+     width: 100%;
+     background: none;
+     font-size: 1.8rem;
+     color: var(--black);
+ }
+ .header .flex .search-form button{
+     font-size: 2rem;
+     color:var(--black)
+     cursor: pointer;
+     background: none;
+ }
+ .header .flex .search-form button:hover{
+    color: var(--main-color);
+ }
+ .header .flex .icon div{
+    font-size: 2rem;
+    color: var(--black);
+    border-radius: 0.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    width: 4.5rem;
+    line-height: 4.4rem;
+    background-color: var(--light-bg);
+    text-align: center;
+ }
+ .header .flex .icon div:hover{
+    background-color: var(--black);
+    color:var(--white)
+ }
+#search--bar{
+    display:none;
+}

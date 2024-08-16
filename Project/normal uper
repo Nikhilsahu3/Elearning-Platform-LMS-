@@ -1,0 +1,19 @@
+ <div class="hero">
+                <nav>
+                    <img src="image/logo orig.png" class="logo">
+                    <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="">Categories</a></li>
+                    </ul>
+                    <form class="search-form">
+                        <input type="search" id="search-box" placeholder="Search Course..">
+                        <label for="search-box" class="search-icon"></label>
+                        <a href="#" class="shopping-cart fa-2xl"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </form>
+                    
+                    <div>
+                        <a href="login.html" class="login-btn">Log in</a>
+                        <a href="Registration.html" class="btn">Sign In</a>
+                    </div>
+                </nav>

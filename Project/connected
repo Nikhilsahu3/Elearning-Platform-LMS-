@@ -1,0 +1,23 @@
+<?php
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+	$cpassword = $_POST['cpassword'];
+	$gender = $_POST['gender'];
+	$phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+
+	
+	$conn = new mysqli('localhost','root','','elearningproject');
+	if($conn->connect_error){
+		echo "$conn->connect_error";
+		die("Connection Failed : ". $conn->connect_error);
+	} else {
+		$stmt = $conn->prepare("insert into user(DEFAULT,name, email, password, cpassword, gender, phone) values(?, ?, ?, ?, ?, ?, ?)");
+		$stmt->bind_param("isssssi",$id, $name, $email, $password, $cpassword, $gender, $phone);
+		$execval = $stmt->execute();
+		echo $execval;
+		echo "Registration successfully...";
+		$stmt->close();
+		$conn->close();
+	}
+?>
